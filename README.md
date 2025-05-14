@@ -6,9 +6,15 @@ Wrapper for iperf3 which automatically logs output to logs folder
 - Logs are tagged with a test number that is automatically incremented, the command being run, and a timestamp
 
 Example usage:
+```bash
 ./record-iperf3.sh -c SERVER_IP --time 0 --bitrate 0 --format m --interval 1
+```
 - starts client that sends to SERVER_IP indefinitely at an unlimited bitrate in Mbit/s and reports every 1s and sends tcp
-./record-iperf3.sh -c SERVER_IP --time 0 --bitrate 0 --format m --interval 1 --udp
+```bash
+./record-iperf3.sh -c SERVER_IP --time 0 --bitrate 0 --format m --interval 1 --udp'''
+```
 - starts client that sends to SERVER_IP indefinitely at an unlimited bitrate in Mbit/s and reports every 1s and sends udp
+```bash
 ./record-iperf3.sh -s --interval 1
+```
 - starts server on device that records every 1s
